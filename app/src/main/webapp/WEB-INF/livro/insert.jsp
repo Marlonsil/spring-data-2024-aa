@@ -5,25 +5,28 @@
     <head>
         <meta charset="UTF-8" />
         <title>Novo Livro</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="container">
         <h1>Novo Livro</h1>
         <form action="/livros/insert" method="post">
             <div>
-                <label>Título:</label>
-                <input type="text" name="titulo" />
+                <label class="form-label">Título:</label>
+                <input type="text" name="titulo" class="form-control" />
             </div>
             <div>
-                <label>Gênero:</label>
-                <select name="genero">
+                <label class="form-label">Gênero:</label>
+                <select name="genero" class="form-select">
                     <c:forEach var="item" items="${generos}">
                         <option value="${item.id}">${item.nome}</option>
                     </c:forEach>
                 </select>
             </div>
-            <a href="/livros/list">Voltar</a>
-            <button type="submit">Salvar</button>
+            <a href="/livros/list"class="btn btn-secondary">Voltar</a>
+            <button type="submit"class="btn btn-success">Salvar</button>
         </form>
+        </div>
     </body>
 </html>
 
