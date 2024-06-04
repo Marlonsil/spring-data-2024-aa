@@ -9,8 +9,8 @@
     </head>
     <body>
         <h1>Livros</h1>
-        <div class="container"></div>
-            <a href="/livros/insert" class="btn btn-primary"></a>>Novo Livro</a>
+        <div class="container">
+            <a href="/livros/insert" class="btn btn-primary">Novo Livro</a>
             <table class="table">
                 <tr>
                     <th>Id</th>
